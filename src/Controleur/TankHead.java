@@ -19,7 +19,7 @@ public class TankHead extends PhysObj{
         }
         public void move(double aim_angle,TankBoady tank_boady){
             double boady_angle=tank_boady.angle;
-            this.angle=boady_angle+aim_angle*0.1;//parce que la tete gere 0.1% de l'inclinaison
+            this.angle=boady_angle+aim_angle*0.2;//parce que la tete gere 20% de l'inclinaison
             this.x=tank_boady.x-(Math.sin(boady_angle))*0.0747;
             this.y=tank_boady.y+0.05+(0.0747)*(Math.cos(boady_angle));//on part du millieu du tank + le rayon changé moins 0.0003 bout pour gerer le décalage tete/corps
 

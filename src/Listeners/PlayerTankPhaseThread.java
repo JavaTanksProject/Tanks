@@ -26,6 +26,9 @@ import java.awt.event.KeyEvent;
                 if(StdDraw.isKeyPressed(KeyEvent.VK_S)&& Game.tank.aim_angle>(-3.1415/5.0)){
                     Game.tank.aim_angle-=0.01;
                 }
+                if(StdDraw.isKeyPressed(KeyEvent.VK_S)&& Game.tank.aim_angle>(-3.1415/5.0)){
+                    Game.tank.aim_angle-=0.01;
+                }
 
 
                 try {

@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class Game {
     public static SetOfClouds nuages;
-    public static Ground terrain = new Ground();
+    public static Ground terrain = new Ground(0.4);
     public static int wind=1;
     public static PhysObj banane;
     public static Tank tank;

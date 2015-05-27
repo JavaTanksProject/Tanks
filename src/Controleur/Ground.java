@@ -62,7 +62,16 @@ public class Ground {
         }
 
     }
+    public Ground(double ground_level) {
 
+
+
+        for (int i = 0; i < ground_values.length; i++) {
+
+            ground_values[i] = new GroundColumn(ground_level);
+
+            }
+        }
 
     public void display() {
         int nval = ground_values.length;
