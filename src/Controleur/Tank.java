@@ -10,6 +10,7 @@ public class Tank {
     public int           player;
     public int           pv;
     public double        aim_angle;
+    public double        cannon_power;
 
 
 
