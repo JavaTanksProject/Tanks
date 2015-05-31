@@ -5,15 +5,16 @@ import edu.princeton.cs.introcs.StdDraw;
 import Controleur.*;
 
 import java.awt.*;
-
+import java.util.ArrayList;
 
 
 public class Game {
     public static SetOfClouds nuages;
-    public static Ground terrain = new Ground(0.4);
+    public static Ground terrain = new Ground();
     public static int wind=1;
     public static PhysObj banane;
     public static Tank tank;
+    public static ArrayList<Explosives> amunitions;
 
     public static void main(String[] args) {
 

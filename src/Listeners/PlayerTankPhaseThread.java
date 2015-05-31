@@ -2,7 +2,9 @@ package Listeners;
 import Controleur.*;
 
 import edu.princeton.cs.introcs.StdDraw;
+import edu.princeton.cs.introcs.StdDraw3D;
 
+import java.awt.*;
 import java.awt.event.KeyEvent;
 
 /**
@@ -26,11 +28,12 @@ import java.awt.event.KeyEvent;
                 if(StdDraw.isKeyPressed(KeyEvent.VK_S)&& Game.tank.aim_angle>(-3.1415/5.0)){
                     Game.tank.aim_angle-=0.01;
                 }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_MINUS)&& Game.tank.cannon_power<(0.1)){
+                if(StdDraw.isKeyPressed(KeyEvent.VK_UP)&& Game.tank.cannon_power<(0.1)){
                     Game.tank.cannon_power+=0.0001;
+
                 }
-                if (StdDraw.isKeyPressed(KeyEvent.VK_PLUS)&& Game.tank.cannon_power>(-0.1)){
-                    Game.tank.aim_angle-=0.0001;
+                if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)&& Game.tank.cannon_power>0.){
+                    Game.tank.cannon_power-=0.0001;
                 }
 
 

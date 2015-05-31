@@ -15,8 +15,7 @@ public class Explosives extends PhysObj{
 
 
     public void moveAndDisplayAndExplode(){
-        int wind= Game.wind;
-        Ground terrain= Game.terrain;
+
 
         if (state==1){
         this.move();
@@ -33,13 +32,15 @@ public class Explosives extends PhysObj{
                     state++;}
                     else state=0; //l'explosion perdure
                 }
-        if (state==0){ StdDraw.filledCircle(x,y,radius);}
+        if (state==0){
+            StdDraw.setPenColor(ColorLibrary.sky);
+            StdDraw.filledCircle(x,y,radius);}
 
     }
 
 
     public void display (){
-        StdDraw.picture(x, y, picturepath, 0.1, 0.1);}
+        StdDraw.picture(x, y, picturepath, 0.01, 0.01);}
     public void collisGestion(){
         Ground terrain= Game.terrain;
         Integer ncol = (int) Math.floor(terrain.ground_values.length*x/2);

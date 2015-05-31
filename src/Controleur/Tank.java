@@ -1,5 +1,9 @@
 package Controleur;
 
+import edu.princeton.cs.introcs.StdDraw;
+
+import java.awt.*;
+
 /**
  * Created by Etienne on 25/05/2015.
  */
@@ -25,7 +29,6 @@ public class Tank {
 
     }
 public void  moveAndDisplay (){
-    System.out.println(tankboady.angle);
     tankboady.moveAndDisplay();
 
     tankcannon.move(aim_angle,tankhead);
@@ -33,7 +36,10 @@ public void  moveAndDisplay (){
 
     tankhead.move(aim_angle,tankboady);
     tankhead.display();
-
+    if(cannon_power>0.0001){
+    StdDraw.setPenColor(ColorLibrary.grey);
+    StdDraw.filledRectangle(0.11, 0.9, cannon_power, 0.005);
+    StdDraw.text(0.11, 0.911,"Cannon power");}
 
 
 
