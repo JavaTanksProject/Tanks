@@ -20,7 +20,13 @@ public class Explosives extends PhysObj{
         if (state==1){
         this.move();
         this.display();}
-        else if(state>1){double scale=state*0.005;
+     
+        else if(state>1){
+        	 //if (state==2){
+        		// Game.terrain.explode(this.x, this.y, this.radius);
+        		 //state ++;
+             // }
+        	double scale=state*0.005;
             StdDraw.setPenColor(ColorLibrary.sky);
                 if (scale<2.0*radius) {
                     StdDraw.filledCircle(x, y, scale*0.5);
