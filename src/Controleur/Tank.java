@@ -15,6 +15,8 @@ public class Tank {
     public int           pv;
     public double        aim_angle;
     public double        cannon_power;
+    public int           side;//0 à droite 1 à gauche
+
 
 
 
@@ -26,9 +28,14 @@ public class Tank {
         this.tankcannon=new TankCannon(player);
         this.pv=100;
         aim_angle=0.;
+        if (player==1){
+                    this.side=0;}
+        else{
+                    this.side=1;}
 
     }
 public void  moveAndDisplay (){
+    tankboady.setSide(side,player);
     tankboady.moveAndDisplay();
 
     tankcannon.move(aim_angle,tankhead);

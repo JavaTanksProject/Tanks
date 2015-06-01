@@ -14,8 +14,13 @@ public class Game {
     public static int wind=1;
     public static PhysObj banane;
     public static Tank tank;
-    public static ArrayList<Explosives> amunitions;
+    public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
 
+    public static void deal_with_ammunitions(){
+        for(int i=0;i<ammunitions.size();i++){
+            ammunitions.get(i).moveAndDisplayAndExplode();
+        }
+    }
     public static void main(String[] args) {
 
 
@@ -29,12 +34,9 @@ public class Game {
         StdDraw.setYscale(0, 1.0);
         terrain.display();
          StdDraw.save("currentground.png");
-
-
-
+        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
         banane= new PhysObj(1.0,1.0,0.0,0.0,"banane.png");
-        nuages  =new SetOfClouds(10,5);//}
-        Explosives bbxpl= new Explosives(1.0,1.0,0.0,0.0,"bbexplosion.png");
+        nuages  =new SetOfClouds(10,5);
         tank=new Tank(1);
 
 
@@ -46,12 +48,14 @@ public class Game {
         while (true){
             StdDraw.picture(1.0, 0.5, "currentground.png");
             nuages.moveAndDisplay();
-            bbxpl.moveAndDisplayAndExplode();
+            Game.deal_with_ammunitions();
             banane.moveAndDisplay();
             tank.moveAndDisplay();
 
             StdDraw.show(1);
         }
+
+
 
 
         }
