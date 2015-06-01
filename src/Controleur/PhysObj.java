@@ -79,7 +79,7 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
         if (y<hmax){
             double norm=Math.sqrt(vx*vx+vy+vy);
             for (int i=0;i<=levelmax;i++)
-            {if(y<actualcolumn.get(i)&& Math.floor(i/2)==i/2)
+            {if(y<actualcolumn.get(i)&& Math.floor(i/2)==i/2)// si on congro modulo 2 = paire
             {
                 double alpha = groundAngle(terrain,2,ncol,i );
                 double norme=Math.sqrt(vx*vx+vy*vy);
