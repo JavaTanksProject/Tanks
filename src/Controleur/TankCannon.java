@@ -16,11 +16,13 @@ public class TankCannon extends PhysObj {
     public TankCannon(int player) {
         if (player == 1) {
             this.side = 0;
+            this.picturepath = "cannon_tank_" + player + "_right.png";
         } else if (player == 2) {
-            this.side = 0;
-        }//à terme faudra changer le sens d'apparition pour player 2
+            this.side = 1;
+            this.picturepath = "cannon_tank_" + player + "_left.png";
+        }
 
-        this.picturepath = "cannon_tank_" + player + ".png";
+
     }
 
     public void move(double aim_angle, TankHead tank_head) {
@@ -36,5 +38,10 @@ public class TankCannon extends PhysObj {
 //        StdDraw.setPenColor(Color.WHITE);
 //        StdDraw.filledCircle(x,y,0.01);
         StdDraw.picture(this.x, this.y, this.picturepath, 0.11, 0.03, this.angle * 57.29);
+    }
+    public void setSide(int side,int player){
+        this.side=side;
+        if( side==0){this.picturepath="cannon_tank_"+player+"_right.png";}
+        else{this.picturepath="cannon_tank_"+player+"_left.png";}
     }
 }

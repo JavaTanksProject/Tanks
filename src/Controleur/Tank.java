@@ -13,7 +13,7 @@ public class Tank {
     public TankCannon    tankcannon;
     public int           player;
     public int           pv;
-    public double        aim_angle;
+    public double        aim_angle;//en radian
     public double        cannon_power;
     public int           side;//0 à droite 1 à gauche
 
@@ -35,14 +35,21 @@ public class Tank {
 
     }
 public void  moveAndDisplay (){
+
     tankboady.setSide(side,player);
     tankboady.moveAndDisplay();
 
+
+    tankcannon.setSide(side,player);
     tankcannon.move(aim_angle,tankhead);
     tankcannon.display();
 
+
+    tankhead.setSide(side,player);
     tankhead.move(aim_angle,tankboady);
     tankhead.display();
+
+
     if(cannon_power>0.0001){
     StdDraw.setPenColor(ColorLibrary.grey);
     StdDraw.filledRectangle(0.11, 0.9, cannon_power, 0.005);

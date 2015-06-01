@@ -18,17 +18,35 @@ import java.awt.event.KeyEvent;
                 // traitement
                 if(StdDraw.isKeyPressed(KeyEvent.VK_D)&& Game.tank.tankboady.vx<0.001){//on accélere à droite avec d (mais que si on a pas déjà une vitesse de 0.05
                     Game.tank.tankboady.vx+=0.0002;
-                    Game.tank.side=0;
+                    if (Game.tank.side==1){
+                        Game.tank.aim_angle=3.1415-Game.tank.aim_angle;
+                        Game.tank.side=0;
+                    }
+
+
                 }
                 if(StdDraw.isKeyPressed(KeyEvent.VK_Q)&& Game.tank.tankboady.vx>-0.001){//pareil à gauche
                     Game.tank.tankboady.vx-=0.0002;
-                    Game.tank.side=1;
+                    if (Game.tank.side==0){
+                        Game.tank.aim_angle=3.1415-Game.tank.aim_angle;
+                        Game.tank.side=1;
+                    }
+
                 }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_Z) && Game.tank.aim_angle<(3.1415/2.0)){
-                    Game.tank.aim_angle+=0.002;
+                if(StdDraw.isKeyPressed(KeyEvent.VK_Z)){
+                    if(Game.tank.aim_angle<(3.1415/2.0) && Game.tank.side==0){
+                    Game.tank.aim_angle+=0.002;}
+                    else if(Game.tank.aim_angle>(3.1415/2.0) && Game.tank.side==1){
+                        Game.tank.aim_angle-=0.002;
+
+                    }
                 }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_S)&& Game.tank.aim_angle>(-3.1415/5.0)){
-                    Game.tank.aim_angle-=0.002;
+                if(StdDraw.isKeyPressed(KeyEvent.VK_S) ){
+                    if (Game.tank.aim_angle>(-3.1415/5.0)&&Game.tank.side==0){
+                    Game.tank.aim_angle-=0.002;}
+                    else if (Game.tank.aim_angle<(6.0*3.1415/5.0) && Game.tank.side==1){
+                        Game.tank.aim_angle+=0.002;
+                    }
                 }
                 if(StdDraw.isKeyPressed(KeyEvent.VK_UP)&& Game.tank.cannon_power<(0.1)){
                     Game.tank.cannon_power+=0.0001;

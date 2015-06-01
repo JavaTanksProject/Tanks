@@ -12,10 +12,13 @@ public class TankHead extends PhysObj{
 
 
         public TankHead(int player) {
-            if (player == 1) {this.side=0;}
-            else if (player==2){this.side=0;}//à terme faudra changer le sens d'apparition pour player 2
+            if (player == 1) {this.side=0;
+                this.picturepath="head_tank_"+player+"_right.png";
+            }
+            else if (player==2){this.side=1;
+                this.picturepath="head_tank_"+player+"_left.png";}
 
-            this.picturepath="head_tank_"+player+".png";
+
         }
         public void move(double aim_angle,TankBoady tank_boady){
             double boady_angle=tank_boady.angle;
@@ -30,5 +33,9 @@ public class TankHead extends PhysObj{
 
         }
         public void wind(){}//le vent n'agit pes sur le tank
-
+        public void setSide(int side,int player){
+            this.side=side;
+            if( side==0){this.picturepath="head_tank_"+player+"_right.png";}
+            else{this.picturepath="head_tank_"+player+"_left.png";}
+        }
 }

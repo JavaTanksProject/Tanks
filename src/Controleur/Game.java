@@ -12,7 +12,7 @@ public class Game {
     public static SetOfClouds nuages;
     public static Ground terrain = new Ground();
     public static int wind=1;
-    public static PhysObj banane;
+//    public static PhysObj banane;
     public static Tank tank;
     public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
 
@@ -34,8 +34,8 @@ public class Game {
         StdDraw.setYscale(0, 1.0);
         terrain.display();
          StdDraw.save("currentground.png");
-        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
-        banane= new PhysObj(1.0,1.0,0.0,0.0,"banane.png");
+//        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
+//        banane= new PhysObj(1.0,1.0,0.0,0.0,"banane.png");
         nuages  =new SetOfClouds(10,5);
         tank=new Tank(1);
 
@@ -49,7 +49,7 @@ public class Game {
             StdDraw.picture(1.0, 0.5, "currentground.png");
             nuages.moveAndDisplay();
             Game.deal_with_ammunitions();
-            banane.moveAndDisplay();
+//            banane.moveAndDisplay();
             tank.moveAndDisplay();
 
             StdDraw.show(1);
