@@ -2,9 +2,7 @@ package Listeners;
 import Controleur.*;
 
 import edu.princeton.cs.introcs.StdDraw;
-import edu.princeton.cs.introcs.StdDraw3D;
 
-import java.awt.*;
 import java.awt.event.KeyEvent;
 
 /**
@@ -12,57 +10,85 @@ import java.awt.event.KeyEvent;
  */
     public class PlayerTankPhaseThread extends Thread{
         public void run() {
+            int running_player=1;
+
 //            long start = System.currentTimeMillis();
             // boucle tant que la durée de vie du thread est < à 5 secondes
             while( true) {
                 // traitement
-                if(StdDraw.isKeyPressed(KeyEvent.VK_D)&& Game.tank.tankboady.vx<0.001){//on accélere à droite avec d (mais que si on a pas déjà une vitesse de 0.05
-                    Game.tank.tankboady.vx+=0.0002;
-                    if (Game.tank.side==1){
-                        Game.tank.aim_angle=3.1415-Game.tank.aim_angle;
-                        Game.tank.side=0;
+                if(StdDraw.isKeyPressed(KeyEvent.VK_D)&& Game.active_tank.tankboady.vx<0.001){//on accélere à droite avec d (mais que si on a pas déjà une vitesse de 0.05
+                    Game.active_tank.tankboady.vx+=0.0002;
+                    if (Game.active_tank.side==1){
+                        Game.active_tank.aim_angle=-Game.active_tank.aim_angle;
+                        Game.active_tank.side=0;
                     }
 
 
                 }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_Q)&& Game.tank.tankboady.vx>-0.001){//pareil à gauche
-                    Game.tank.tankboady.vx-=0.0002;
-                    if (Game.tank.side==0){
-                        Game.tank.aim_angle=3.1415-Game.tank.aim_angle;
-                        Game.tank.side=1;
+                if(StdDraw.isKeyPressed(KeyEvent.VK_Q)&& Game.active_tank.tankboady.vx>-0.001){//pareil à gauche
+                    Game.active_tank.tankboady.vx-=0.0002;
+                    if (Game.active_tank.side==0){
+                        Game.active_tank.aim_angle=-Game.active_tank.aim_angle;
+                        Game.active_tank.side=1;
                     }
 
                 }
                 if(StdDraw.isKeyPressed(KeyEvent.VK_Z)){
-                    if(Game.tank.aim_angle<(3.1415/2.0) && Game.tank.side==0){
-                    Game.tank.aim_angle+=0.002;}
-                    else if(Game.tank.aim_angle>(3.1415/2.0) && Game.tank.side==1){
-                        Game.tank.aim_angle-=0.002;
-
+                    if(Game.active_tank.aim_angle<(3.1415/2.0) && Game.active_tank.side==0){
+                    Game.active_tank.aim_angle+=0.002;}
+                    else if(Game.active_tank.aim_angle>(-3.1415/2.0) && Game.active_tank.side==1){
+                        Game.active_tank.aim_angle-=0.002;
                     }
                 }
                 if(StdDraw.isKeyPressed(KeyEvent.VK_S) ){
-                    if (Game.tank.aim_angle>(-3.1415/5.0)&&Game.tank.side==0){
-                    Game.tank.aim_angle-=0.002;}
-                    else if (Game.tank.aim_angle<(6.0*3.1415/5.0) && Game.tank.side==1){
-                        Game.tank.aim_angle+=0.002;
+                    if (Game.active_tank.aim_angle>(-3.1415/5.0)&&Game.active_tank.side==0){
+                    Game.active_tank.aim_angle-=0.002;}
+                    else if (Game.active_tank.aim_angle<(3.1415/5.0)&& Game.active_tank.side==1){
+                        Game.active_tank.aim_angle+=0.002;
                     }
                 }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_UP)&& Game.tank.cannon_power<(0.1)){
-                    Game.tank.cannon_power+=0.0001;
+                if(StdDraw.isKeyPressed(KeyEvent.VK_UP)&& Game.active_tank.cannon_power<(0.1)){
+                    Game.active_tank.cannon_power+=0.0001;
 
                 }
-                if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)&& Game.tank.cannon_power>0.){
-                    Game.tank.cannon_power-=0.0001;
+                if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)&& Game.active_tank.cannon_power>0.){
+                    Game.active_tank.cannon_power-=0.0001;
                 }
+
+
+
+
+
+
+                if (running_player==1){Game.tank1=Game.active_tank;} //
+                else Game.tank2=Game.active_tank;
+
+
+
+
+
+
+
+
                 if (StdDraw.isKeyPressed(KeyEvent.VK_SPACE)){
-                            double alpha=Game.tank.tankcannon.angle;
+                            double alpha=Game.active_tank.tankcannon.angle;
                             Game.ammunitions.add(
-                                    new Explosives(Game.tank.tankcannon.x,
-                                    Game.tank.tankcannon.y,
-                                    Math.cos(alpha)*Game.tank.cannon_power/5.0,
-                                    Math.sin(alpha)*Game.tank.cannon_power/5.0,
+                                    new Explosives(Game.active_tank.tankcannon.x,
+                                    Game.active_tank.tankcannon.y,
+                                    Math.cos(alpha)*Game.active_tank.cannon_power/5.0,
+                                    Math.sin(alpha)*Game.active_tank.cannon_power/5.0,
                                     "ammunstandard.png"));
+
+                            if (running_player==1){
+                                running_player=2;
+                                Game.active_tank=Game.tank2;
+                            }                       //on passe au tour de l'autre joueur
+                            else {
+                                running_player = 1;
+                                Game.active_tank=Game.tank1;
+                            }
+
+
                             try {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {

@@ -2,19 +2,20 @@ package Controleur;
 
 import Listeners.*;
 import edu.princeton.cs.introcs.StdDraw;
-import Controleur.*;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 
 public class Game {
     public static SetOfClouds nuages;
-    public static Ground terrain = new Ground();
-    public static int wind=1;
+    public static Ground terrain = new Ground(0.4);
+    public static int wind=3;
 //    public static PhysObj banane;
-    public static Tank tank;
+    public static Tank active_tank;
     public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
+    public static Tank tank1=new Tank(1);
+    public static Tank tank2=new Tank (2);
+
 
     public static void deal_with_ammunitions(){
         for(int i=0;i<ammunitions.size();i++){
@@ -37,7 +38,7 @@ public class Game {
 //        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
 //        banane= new PhysObj(1.0,1.0,0.0,0.0,"banane.png");
         nuages  =new SetOfClouds(10,5);
-        tank=new Tank(1);
+        active_tank =tank1;
 
 
 
@@ -50,7 +51,8 @@ public class Game {
             nuages.moveAndDisplay();
             Game.deal_with_ammunitions();
 //            banane.moveAndDisplay();
-            tank.moveAndDisplay();
+            tank1.moveAndDisplay();
+            tank2.moveAndDisplay();
 
             StdDraw.show(1);
         }
