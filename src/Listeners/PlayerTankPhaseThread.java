@@ -54,6 +54,22 @@ import java.awt.event.KeyEvent;
                 if (StdDraw.isKeyPressed(KeyEvent.VK_DOWN)&& Game.active_tank.cannon_power>0.){
                     Game.active_tank.cannon_power-=0.0001;
                 }
+                if (StdDraw.isKeyPressed(KeyEvent.VK_L)&& Game.active_tank.pv<100){
+                    Game.active_tank.pv+=1;
+                    try {
+                        Thread.sleep(20);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if (StdDraw.isKeyPressed(KeyEvent.VK_K)&& Game.active_tank.pv>0){
+                    Game.active_tank.pv-=1;
+                    try {
+                        Thread.sleep(20);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
 
 
 
@@ -90,7 +106,7 @@ import java.awt.event.KeyEvent;
 
 
                             try {
-                                Thread.sleep(500);
+                                Thread.sleep(2000);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }

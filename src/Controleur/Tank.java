@@ -49,15 +49,34 @@ public void  moveAndDisplay (){
     tankhead.move(aim_angle,tankboady);
     tankhead.display();
 
-
-    if(cannon_power>0.0001){
-    StdDraw.setPenColor(ColorLibrary.grey);
-    StdDraw.filledRectangle(0.11, 0.9, cannon_power, 0.005);
-    StdDraw.text(0.11, 0.911,"Cannon power");}
+    //les stats
 
 
+        if (player==1){
+            if(cannon_power>0.0001 && Game.active_tank.player==player){
+                StdDraw.setPenColor(ColorLibrary.grey);
+                StdDraw.filledRectangle(0.11, 0.9, cannon_power, 0.005);
+                StdDraw.text(0.11, 0.911,"Cannon power");}
 
-    }
+            StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
+            StdDraw.filledRectangle(0.11,0.95,pv*0.002,0.005);
+            }
+
+
+        if (player==2){
+            if(cannon_power>0.0001 && Game.active_tank.player==player){StdDraw.setPenColor(ColorLibrary.grey);
+                StdDraw.filledRectangle(1.89, 0.9, cannon_power, 0.005);
+                StdDraw.text(1.89, 0.911,"Cannon power");}
+
+            StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
+            StdDraw.filledRectangle(1.89,0.95,pv*0.002,0.005);
+
+        }
+
+        }
+
+
+
 
 
 }

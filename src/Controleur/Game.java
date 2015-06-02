@@ -7,9 +7,14 @@ import java.util.ArrayList;
 
 
 public class Game {
+//    dimensions du terrain
+    public static double lenght=2.0;
+    public static double height=1.0;
+
     public static SetOfClouds nuages;
-    public static Ground terrain = new Ground(0.4);
+    public static Ground terrain = new Ground();
     public static int wind=3;
+
 //    public static PhysObj banane;
     public static Tank active_tank;
     public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
@@ -31,8 +36,8 @@ public class Game {
         //on crée le terrain
         StdDraw.setPenColor(ColorLibrary.sky);
         StdDraw.clear(StdDraw.getPenColor());//font bleu ciel
-        StdDraw.setXscale(0, 2.0);
-        StdDraw.setYscale(0, 1.0);
+        StdDraw.setXscale(0, lenght);
+        StdDraw.setYscale(0, height);
         terrain.display();
          StdDraw.save("currentground.png");
 //        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
