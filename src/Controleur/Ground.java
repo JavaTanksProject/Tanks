@@ -121,6 +121,29 @@ public class Ground {
     }*/
 
     public void explode (double x,double y, double radius) {
+    	Ground terrain= Game.terrain;
+    Integer ncol = (int) Math.floor(terrain.ground_values.length*x/2);
+	ArrayList<Double> actualcolumn =terrain.ground_values[ncol].ground_column;
+	
+    int levelmax=actualcolumn.size()-1;
+    double hmax=actualcolumn.get(levelmax);
+   
+    Integer ncolimp = (int) Math.floor(Ground.number*radius);   // g.n*radius*2/2 parce que radius = diametre et 2 longueur du terrain
+    				
+    if (y==hmax){
+    	for(int i = ncol - ncolimp; i < 3.14; i++){
+    		double hinit = (Double)Game.terrain.ground_values[ncol+i].ground_column.get(0);    
+    		//Game.terrain.ground_values[ncol+i].ground_column.set(0, y- d*tan(3,14/))
+    		
+    	}
+    	
+    	
+    	
+  
+    		// set les y des x < radius . les y deviennent ynew = (y - tan (Pi/)*(x-ncol)
+    		
+    }
+    
     	
     	
 
