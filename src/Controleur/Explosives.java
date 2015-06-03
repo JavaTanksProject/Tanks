@@ -10,8 +10,14 @@ public class Explosives extends PhysObj{
     public int state;// etat 0 pour explosé, 1 pour pas encore explosé et les autres etats pour l'explosion
     public double radius;//le rayon de l'explosion
     public int damage;//les degats infligés
+    public double a_angle;
 
-    public Explosives(double x, double y, double vx, double vy, String picturepath){super( x, y, vx, vy, picturepath);this.state=1;this.radius=0.1; damage=1;}
+    public Explosives(double x, double y, double vx, double vy, String picturepath){super( x, y, vx, vy, picturepath);
+        this.state=1;
+        this.radius=0.1;
+        damage=1;
+
+    }
 
 
     public void moveAndDisplayAndExplode(){
@@ -19,6 +25,7 @@ public class Explosives extends PhysObj{
 
         if (state==1){
         this.move();
+        this.singularity();
         this.display();}
      
         else if(state>1){
@@ -38,15 +45,20 @@ public class Explosives extends PhysObj{
                     state++;}
                     else state=0; //l'explosion perdure
                 }
-        //if (state==0){
-            //StdDraw.setPenColor(ColorLibrary.sky);
-           // StdDraw.filledCircle(x,y,radius);}
+        if (state==0){
+        StdDraw.setPenColor(ColorLibrary.sky);
+        StdDraw.filledCircle(x,y,radius);}
 
     }
 
 
     public void display (){
-        StdDraw.picture(x, y, picturepath, 0.01, 0.01);}
+
+
+
+        StdDraw.picture(x, y, picturepath, 0.03, 0.03,a_angle);
+
+    }
     public void collisGestion(){
         Ground terrain= Game.terrain;
         Integer ncol = (int) Math.floor(terrain.ground_values.length*x/2);
@@ -64,6 +76,6 @@ public class Explosives extends PhysObj{
             }
         }
     }
-
+    public void singularity(){}
 
 }

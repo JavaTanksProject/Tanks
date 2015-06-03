@@ -89,11 +89,11 @@ import java.awt.event.KeyEvent;
                 if (StdDraw.isKeyPressed(KeyEvent.VK_SPACE)){
                             double alpha=Game.active_tank.tankcannon.angle;
                             Game.ammunitions.add(
-                                    new Explosives(Game.active_tank.tankcannon.x,
+                                    new Frag(Game.active_tank.tankcannon.x,
                                     Game.active_tank.tankcannon.y,
                                     Math.cos(alpha)*Game.active_tank.cannon_power/5.0,
-                                    Math.sin(alpha)*Game.active_tank.cannon_power/5.0,
-                                    "ammunstandard.png"));
+                                    Math.sin(alpha)*Game.active_tank.cannon_power/5.0
+                                    ));
 
                             if (running_player==1){
                                 running_player=2;

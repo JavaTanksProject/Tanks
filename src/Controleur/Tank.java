@@ -16,6 +16,7 @@ public class Tank {
     public double        aim_angle;//en radian
     public double        cannon_power;
     public int           side;//0 à droite 1 à gauche
+    public Explosives    loaded_ammunition;
 
 
 

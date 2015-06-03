@@ -20,7 +20,7 @@ public class Cloud extends PhysObj {
     }
 
     public void moveAndDisplay () {
-        vx=wind*0.00004*(1+4*(y-0.8));   //deplacement en x plus on est haut plus on bouge vite
+        vx=-(wind*0.00004*(1+4*(y-0.8)));   //deplacement en x plus on est haut plus on bouge vite
         if(x>2.5 || x<-2.5){                         // faire tourner les nuages en boucle
          x=-x;
         }

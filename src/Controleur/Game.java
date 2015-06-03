@@ -13,7 +13,7 @@ public class Game {
 
     public static SetOfClouds nuages;
     public static Ground terrain = new Ground();
-    public static int wind=3;
+    public static int wind=5;
 
 //    public static PhysObj banane;
     public static Tank active_tank;
@@ -52,9 +52,8 @@ public class Game {
         thread.start();
 
         while (true){
-         //   StdDraw.picture(1.0, 0.5, "currentground.png");
-        	StdDraw.clear();
-        	terrain.display();
+            StdDraw.picture(1.0, 0.5, "currentground.png");
+
             nuages.moveAndDisplay();
             Game.deal_with_ammunitions();
 //            banane.moveAndDisplay();

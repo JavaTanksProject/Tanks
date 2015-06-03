@@ -137,7 +137,7 @@ public class Ground {
     		
     		double alpha = Math.acos(cos_alpha);
     		
-    		double hnew = Math.max((Double)Game.terrain.ground_values[i].ground_column.get(0),y - Math.sin(alpha)*radius);
+    		double hnew = Math.min((Double)Game.terrain.ground_values[i].ground_column.get(0),y - Math.sin(alpha)*radius);
     		Game.terrain.ground_values[i].ground_column.set(0, hnew);
     		
     	}
