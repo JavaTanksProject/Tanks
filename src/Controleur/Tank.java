@@ -74,9 +74,27 @@ public void  moveAndDisplay (){
         }
 
         }
+	public void explosion(){
+		double d1 = Math.sqrt(x*Game.tank1.tankboady.x);
+		double d2 = Math.sqrt(x*Game.tank2.tankboady.x);
+		
+		if ( d1 < radius){
+			if(d1 <= 0.1*radius){
+				Game.tank1.pv -= damage/radius/10;  //egale a lancien tank.pv -damage
+		}
+			else
+				Game.tank1.pv -= damage; 	
+			}
+		
+		if ( d2 < radius){
+			if(d2!=0.1*radius){
+				Game.tank2.pv -= damage/radius/10;  //egale a lancien tank.pv -damage
+		}
+			else
+				Game.tank2.pv -= damage; 	
+			}
 
 
 
-
-
+	}
 }
