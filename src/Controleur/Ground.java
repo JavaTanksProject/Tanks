@@ -128,12 +128,17 @@ public class Ground {
     int levelmax=actualcolumn.size()-1;
     double hmax=actualcolumn.get(levelmax);
    
-    Integer ncolimp = (int) Math.floor(Ground.number*radius);   // g.n*radius*2/2 parce que radius = diametre et 2 longueur du terrain
+    Integer half_ncolimp = (int) Math.floor(Ground.number*radius/Game.lenght);   // g.n*radius*2/2 parce que radius = diametre et 2 longueur du terrain
     				
-    if (y==hmax){
-    	for(int i = ncol - ncolimp; i < 3.14; i++){
-    		double hinit = (Double)Game.terrain.ground_values[ncol+i].ground_column.get(0);    
-    		//Game.terrain.ground_values[ncol+i].ground_column.set(0, y- d*tan(3,14/))
+  
+    	for(int i = (int) Math.max(ncol - half_ncolimp, 0); i < (int) Math.min(ncol + half_ncolimp, Ground.number); i++){
+    		
+    		double cos_alpha = (Math.abs(ncol - i)*Game.lenght/(Ground.number*1.0))/radius;
+    		
+    		double alpha = Math.acos(cos_alpha);
+    		
+    		double hnew = Math.max((Double)Game.terrain.ground_values[i].ground_column.get(0),y - Math.sin(alpha)*radius);
+    		Game.terrain.ground_values[i].ground_column.set(0, hnew);
     		
     	}
     	
@@ -142,7 +147,7 @@ public class Ground {
   
     		// set les y des x < radius . les y deviennent ynew = (y - tan (Pi/)*(x-ncol)
     		
-    }
+   
     
     	
     	

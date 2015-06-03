@@ -22,10 +22,10 @@ public class Explosives extends PhysObj{
         this.display();}
      
         else if(state>1){
-        	 //if (state==2){
-        		// Game.terrain.explode(this.x, this.y, this.radius);
-        		 //state ++;
-             // }
+        	 if (state==2){
+        		Game.terrain.explode(this.x, this.y, this.radius);
+        		 state ++;
+              }
         	double scale=state*0.005;
             StdDraw.setPenColor(ColorLibrary.sky);
                 if (scale<2.0*radius) {
@@ -38,9 +38,9 @@ public class Explosives extends PhysObj{
                     state++;}
                     else state=0; //l'explosion perdure
                 }
-        if (state==0){
-            StdDraw.setPenColor(ColorLibrary.sky);
-            StdDraw.filledCircle(x,y,radius);}
+        //if (state==0){
+            //StdDraw.setPenColor(ColorLibrary.sky);
+           // StdDraw.filledCircle(x,y,radius);}
 
     }
 
