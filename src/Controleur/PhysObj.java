@@ -66,20 +66,23 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
 
 
     public void display (){
+//        if(x<0.01){StdDraw.picture(x+2,y+0.05,picturepath,0.1,0.1,angle*57.29);}
+//        if(x>1.98){StdDraw.picture(x-2,y+0.05,picturepath,0.1,0.1,angle*57.29);}
         StdDraw.picture(x,y+0.05,picturepath,0.1,0.1,angle*57.29);//on convertie en degré nos radians
     }
 
     public void collisGestion(){
         double rebounce_coeff=getRebounce_coeff();
         Ground terrain= Game.terrain;
-        Integer ncol = (int) Math.floor(terrain.ground_values.length*x/2);
+        Integer ncol = (int) Math.floor(terrain.ground_values.length*x/Game.lenght);
+        if (ncol<5){ncol=5;}                    //entourloupe pour pas avoir de prob au sol
         ArrayList<Double> actualcolumn =terrain.ground_values[ncol].ground_column;
         int levelmax=actualcolumn.size()-1;
         double hmax=actualcolumn.get(levelmax);
         if (y<hmax){
             double norm=Math.sqrt(vx*vx+vy+vy);
             for (int i=0;i<=levelmax;i++)
-            {if(y<actualcolumn.get(i)&& Math.floor(i/2)==i/2)// si on congro modulo 2 = paire
+            {if(y<actualcolumn.get(i)&& Math.floor(i/2)==i/2)// si on est congru modulo 2 = paire
             {
                 double alpha = groundAngle(terrain,2,ncol,i );
                 double norme=Math.sqrt(vx*vx+vy*vy);
@@ -118,7 +121,7 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
 
     public double groundAngle(Ground terrain, int column_space, int ncol,int level_in_column){
         double deniv=getDeniv( terrain,  column_space,  ncol, level_in_column);
-        return Math.atan(deniv * terrain.ground_values.length/(2.*column_space*1.0));
+        return Math.atan(deniv * terrain.ground_values.length/(Game.lenght*column_space*1.0));
     }
 
     public double getRebounce_coeff(){

@@ -59,7 +59,7 @@ public void  moveAndDisplay (){
                 StdDraw.text(0.11, 0.911,"Cannon power");}
 
             StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
-            StdDraw.filledRectangle(0.11,0.95,pv*0.002,0.005);
+            StdDraw.filledRectangle(pv*0.001,Game.height*0.95,pv*0.001,0.005);
             }
 
 
@@ -69,7 +69,7 @@ public void  moveAndDisplay (){
                 StdDraw.text(1.89, 0.911,"Cannon power");}
 
             StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
-            StdDraw.filledRectangle(1.89,0.95,pv*0.002,0.005);
+            StdDraw.filledRectangle(Game.lenght-pv*0.001,Game.height*0.95,pv*0.001,0.005);
 
         }
 

@@ -14,6 +14,10 @@ public class ColorLibrary {
     public static Color test=new Color(250,250,00);
 
     public static Color green_to_red (int pv){
+        int red=(int)Math.floor(150-((pv/10)*(pv/10)*1.5)//on gere le rouge
+                +(10*2.5*2.5066*Math.exp(pv*pv*0.00001/2)));//on ajoute de quoi faire du jaune grace a une gausienne allant jusqu'à 0.4 multipliee par 2. puis par 100
+        int green=(int)Math.floor(((pv/10)*(pv/10)*1.5)
+                +(10*2.5*2.5066*Math.exp(pv*pv*0.00001/2)));
         Color couleur=new Color(red,green,00);
         return couleur;
     }
