@@ -52,7 +52,9 @@ public class Game {
         thread.start();
 
         while (true){
-            StdDraw.picture(1.0, 0.5, "currentground.png");
+         //   StdDraw.picture(1.0, 0.5, "currentground.png");
+        	StdDraw.clear();
+        	terrain.display();
             nuages.moveAndDisplay();
             Game.deal_with_ammunitions();
 //            banane.moveAndDisplay();
