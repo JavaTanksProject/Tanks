@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77ee3d65-ec9b-4839-9869-97a5b0fd9ac3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controleur/Frag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Cloud.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Cloud.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Explosives.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Explosives.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Game.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Ground.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Ground.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Listeners/PlayerTankPhaseThread.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Listeners/PlayerTankPhaseThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Tank.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Tank.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankBoady.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankBoady.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankCannon.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankCannon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankHead.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/TankHead.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currentground.png" afterPath="$PROJECT_DIR$/currentground.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Cloud.java" afterPath="$PROJECT_DIR$/src/Controleur/Cloud.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Explosives.java" afterPath="$PROJECT_DIR$/src/Controleur/Explosives.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Game.java" afterPath="$PROJECT_DIR$/src/Controleur/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Ground.java" afterPath="$PROJECT_DIR$/src/Controleur/Ground.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" afterPath="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Tank.java" afterPath="$PROJECT_DIR$/src/Controleur/Tank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tanks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +45,8 @@
       <file leaf-file-name="Ground.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Ground.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2703">
-              <caret line="140" column="69" selection-start-line="140" selection-start-column="69" selection-end-line="140" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2295" max-vertical-offset="2652">
+              <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -70,7 +55,7 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1377">
               <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -112,17 +97,17 @@
       <file leaf-file-name="Explosives.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1496">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankBoady.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TankBoady.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/TankBoady.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7546729" vertical-offset="408" max-vertical-offset="918">
+            <state vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="918">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
@@ -132,18 +117,18 @@
       <file leaf-file-name="Frag.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Frag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="272">
               <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tank.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1513">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.64252335" vertical-offset="1221" max-vertical-offset="1666">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -198,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/Controleur/Ground.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Cloud.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Game.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/Tank.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Frag.java" />
         <option value="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" />
         <option value="$PROJECT_DIR$/src/Controleur/PhysObj.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Explosives.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/Tank.java" />
       </list>
     </option>
   </component>
@@ -240,8 +225,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,6 +303,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,6 +702,7 @@
       <workItem from="1433178586925" duration="2099000" />
       <workItem from="1433253112320" duration="4499000" />
       <workItem from="1433331757641" duration="9042000" />
+      <workItem from="1433347534701" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="test de commit via intellijidea">
       <created>1432746750761</created>
@@ -734,11 +720,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192080000" />
+    <option name="totallyTimeSpent" value="192995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -751,7 +737,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28301886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28301886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16398244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -873,9 +859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="530" max-vertical-offset="2227">
           <caret line="69" column="5" selection-start-line="67" selection-start-column="3" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,9 +930,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2040">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,19 +1147,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controleur/Ground.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2703">
-          <caret line="140" column="69" selection-start-line="140" selection-start-column="69" selection-end-line="140" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2295" max-vertical-offset="2652">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1513">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,19 +1187,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
+    <entry file="file://$PROJECT_DIR$/src/Controleur/TankBoady.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="918">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/TankBoady.java">
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7546729" vertical-offset="408" max-vertical-offset="918">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1496">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64252335" vertical-offset="1221" max-vertical-offset="1666">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
