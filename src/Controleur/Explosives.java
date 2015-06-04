@@ -84,6 +84,8 @@ public class Explosives extends PhysObj{
             }
         }
     }
-    public void singularity(){}
+    public void singularity(){
+    	
+    }
 
 }
