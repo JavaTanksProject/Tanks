@@ -13,7 +13,11 @@ public class Game {
 
     public static SetOfClouds nuages;
     public static Ground terrain = new Ground();
+<<<<<<< HEAD
     public static int wind=10;
+=======
+    public static int wind=5;
+>>>>>>> d23458494032ff1f57c99586ff39f94d16f0c4c1
 
 //    public static PhysObj banane;
     public static Tank active_tank;
