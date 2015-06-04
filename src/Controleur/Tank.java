@@ -21,7 +21,6 @@ public class Tank {
 
 
 
-
     public Tank(int player){
         this.player=player;
         this.tankboady=new TankBoady(player);
@@ -86,8 +85,8 @@ public void  moveAndDisplay (){
                 }
                 else
                     this.pv -= damage;
-            }
 
+            }
     }
 
 }
