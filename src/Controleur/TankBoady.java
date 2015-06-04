@@ -36,9 +36,20 @@ public class TankBoady extends PhysObj{
     public double getGravity(){
         return gravity;
     }
+    public void wind(){}
     public void display (){
         StdDraw.picture(x, y + 0.05, picturepath, 0.15, 0.1, angle * 57.29);}//on convertie en degré nos radians
+    public void not_the_edge(){
+        if (this.x<0.02) {
+            vx = 0;
+            x = 0.02;
+        }
+        if (this.x>0.999*Game.lenght){
+            vx=0;
+            x=0.995*Game.lenght;
+        }
 
+    }
     public void setSide(int side,int player){
         this.side=side;
         if( side==0){this.picturepath="boady_tank_"+player+"_right.png";}

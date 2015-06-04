@@ -39,6 +39,7 @@ public void  moveAndDisplay (){
 
     tankboady.setSide(side,player);
     tankboady.moveAndDisplay();
+    tankboady.not_the_edge();
 
 
     tankcannon.setSide(side,player);

@@ -10,12 +10,14 @@ public class Explosives extends PhysObj{
     public int state;// etat 0 pour explosé, 1 pour pas encore explosé et les autres etats pour l'expl_on_tanks
     public double radius;//le rayon de l'expl_on_tanks
     public int damage;//les degats infligés
-    public double a_angle;
+    public double a_angle;//orientation de l'explosif en l'air
+
 
     public Explosives(double x, double y, double vx, double vy, String picturepath){super( x, y, vx, vy, picturepath);
         this.state=1;
         this.radius=0.1;
-        damage=1;
+        damage=50;
+
 
     }
 
@@ -58,8 +60,11 @@ public class Explosives extends PhysObj{
     public void display (){
 
 
-
-        StdDraw.picture(x, y, picturepath, 0.03, 0.03,a_angle);
+        if ( !Double.isNaN(Math.atan(vy/vx))){
+            a_angle=Math.atan(vy/vx);
+        }
+        if(vx<0){a_angle=3.1415+a_angle;}
+        StdDraw.picture(x, y, picturepath, 0.03, 0.03,a_angle*57.3);
 
     }
     public void collisGestion(){

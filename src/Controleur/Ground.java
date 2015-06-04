@@ -82,7 +82,6 @@ public class Ground {
             posX[i] = ((double) i + 1.0) * 2 / nval;
             posY[i] = h;
         }
-
         posX[nval] = 2.0;
         posY[nval] = 0.;
         posX[nval + 1] = 0.;
