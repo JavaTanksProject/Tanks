@@ -42,7 +42,8 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
 
 
         this.wind();   //deplacement en x
-        vy=vy+(-vy*vy)*air_friction_coeff-getGravity();           //deplacement en y (avec ou sans gravité)
+//        vy=vy+(-vy*vy)*air_friction_coeff-getGravity();           //deplacement en y
+        vy=vy-getGravity();           //deplacement en y sans vent
 
         if(x<0.01){x+=2;}
         if(x>1.98){x-=2;}
