@@ -16,9 +16,10 @@ public class VerticalFrag extends Explosives {
 	    		this.vx = 0;
 	    		this.picturepath = "vertical.png"; //mettre nouvelle image de la frag avec parachute
 
-//	    		if (vy<0){StdDraw.picture(x, y,"parachute", 0.03, 0.03);}
+
 	    		
 	    	}
+            if (vy<0){StdDraw.picture(x, y+0.03,"parachute.png", 0.05, 0.1);}
 	    	a_vy=vy;
 	  
 	    }

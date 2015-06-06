@@ -128,6 +128,13 @@ import java.awt.event.KeyEvent;
                             }
 
                     Game.wind=(int)(Math.random()*50)-25;//on change le vent pour le round d'apres
+                    canon_lock=0;
+
+                    try {
+                        Thread.sleep(300);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
 
 
