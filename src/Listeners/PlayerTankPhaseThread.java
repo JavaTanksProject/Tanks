@@ -10,29 +10,33 @@ import java.awt.event.KeyEvent;
  */
     public class PlayerTankPhaseThread extends Thread{
         public void run() {
+        	int canon_lock = 0;
             int running_player=1;
 
+          
 //            long start = System.currentTimeMillis();
             // boucle tant que la durée de vie du thread est < à 5 secondes
             while( true) {
-                // traitement
-                if(StdDraw.isKeyPressed(KeyEvent.VK_D)&& Game.active_tank.tankboady.vx<0.001){//on accélere à droite avec d (mais que si on a pas déjà une vitesse de 0.05
+            	
+            		if(StdDraw.isKeyPressed(KeyEvent.VK_D)&& Game.active_tank.tankboady.vx<0.001){//on accélere à droite avec d (mais que si on a pas déjà une vitesse de 0.05
                     Game.active_tank.tankboady.vx+=0.0002;
-                    if (Game.active_tank.side==1){
+                    	if (Game.active_tank.side==1){
                         Game.active_tank.aim_angle=-Game.active_tank.aim_angle;
                         Game.active_tank.side=0;
-                    }
-
-
-                }
-                if(StdDraw.isKeyPressed(KeyEvent.VK_Q)&& Game.active_tank.tankboady.vx>-0.001){//pareil à gauche
+                    	}
+                    canon_lock = 1;
+            		}
+            			
+                  	if(StdDraw.isKeyPressed(KeyEvent.VK_Q)&& Game.active_tank.tankboady.vx>-0.001){//pareil à gauche
                     Game.active_tank.tankboady.vx-=0.0002;
-                    if (Game.active_tank.side==0){
+                    	if (Game.active_tank.side==0){
                         Game.active_tank.aim_angle=-Game.active_tank.aim_angle;
                         Game.active_tank.side=1;
-                    }
-
-                }
+                    	}
+                canon_lock = 1;
+                  	}
+            	
+            	
                 if(StdDraw.isKeyPressed(KeyEvent.VK_Z)){
                     if(Game.active_tank.aim_angle<(3.1415/2.0) && Game.active_tank.side==0){
                     Game.active_tank.aim_angle+=0.002;}
@@ -97,7 +101,8 @@ import java.awt.event.KeyEvent;
 
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_SPACE)){
-                            double alpha=Game.active_tank.tankcannon.angle;
+                	if(canon_lock == 0){
+                		 double alpha=Game.active_tank.tankcannon.angle;
                     Explosives to_be_sent=Game.active_tank.loaded_ammunition;
                         to_be_sent.x=Game.active_tank.tankcannon.x;
                         to_be_sent.y=Game.active_tank.tankcannon.y;
@@ -105,7 +110,15 @@ import java.awt.event.KeyEvent;
                         to_be_sent.vy=Math.sin(alpha)*Game.active_tank.cannon_power/5.0;
                             Game.ammunitions.add(to_be_sent);//on tire
                         Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
-
+                	
+                        while (Game.ammunitions.get(Game.ammunitions.size()-1).state==1)try { //tant que le dernier explosif n'a pas explosé, on ne bouge plus
+                            Thread.sleep(1);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                	}
+                	
+                           
                             if (running_player==1){
                                 running_player=2;
                                 Game.active_tank=Game.tank2;
@@ -116,11 +129,7 @@ import java.awt.event.KeyEvent;
                             }
 
 
-                            while (Game.ammunitions.get(Game.ammunitions.size()-1).state==1)try { //tant que le dernier explosif n'a pas explosé, on ne bouge plus
-                                Thread.sleep(1);
-                            } catch (InterruptedException e) {
-                                e.printStackTrace();
-                            }
+
                     Game.wind=(int)(Math.random()*50)-25;//on change le vent pour le round d'apres
                 }
 
