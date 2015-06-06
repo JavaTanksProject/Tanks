@@ -19,6 +19,11 @@ public class Player {
         this.tank=new Tank(1+((id+1)%2));
         this.money=0;
         this.personal_goods=new int [10];
+        this.personal_goods[1]=100;
+        this.personal_goods[2]=5;
+        this.personal_goods[3]=1;
+        this.tank.player=id;
+
     }
 
 }

@@ -8,7 +8,11 @@ import edu.princeton.cs.introcs.StdDraw;
 public class Frag extends Explosives {
 	public double a_vy;
     public Frag(double x, double y, double vx, double vy){
-        super(x,y,vx,vy,"frag.png");}
+        super(x,y,vx,vy,"frag.png");
+        this.id=2;
+        this.radius=0.04;
+        this.damage=10;
+    }
     
     public void singularity(){
     	if(vy < 0 && a_vy > 0  ){

@@ -132,4 +132,6 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
     public double getGravity(){
         return gravity;
     }
+
 }
+

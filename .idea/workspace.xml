@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77ee3d65-ec9b-4839-9869-97a5b0fd9ac3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controleur/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Cloud.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Cloud.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Game.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Ground.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Ground.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Player.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Listeners/PlayerTankPhaseThread.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Listeners/PlayerTankPhaseThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/SetOfClouds.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/SetOfClouds.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Tanks/Controleur/Tank.class" afterPath="$PROJECT_DIR$/out/production/Tanks/Controleur/Tank.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/currentground.png" afterPath="$PROJECT_DIR$/currentground.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Cloud.java" afterPath="$PROJECT_DIR$/src/Controleur/Cloud.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Game.java" afterPath="$PROJECT_DIR$/src/Controleur/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Ground.java" afterPath="$PROJECT_DIR$/src/Controleur/Ground.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Explosives.java" afterPath="$PROJECT_DIR$/src/Controleur/Explosives.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Frag.java" afterPath="$PROJECT_DIR$/src/Controleur/Frag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/PhysObj.java" afterPath="$PROJECT_DIR$/src/Controleur/PhysObj.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Player.java" afterPath="$PROJECT_DIR$/src/Controleur/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" afterPath="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/SetOfClouds.java" afterPath="$PROJECT_DIR$/src/Controleur/SetOfClouds.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/Tank.java" afterPath="$PROJECT_DIR$/src/Controleur/Tank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controleur/VerticalFrag.java" afterPath="$PROJECT_DIR$/src/Controleur/VerticalFrag.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tanks.iws" />
@@ -47,18 +39,8 @@
       <file leaf-file-name="PlayerTankPhaseThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="2346">
-              <caret line="123" column="98" selection-start-line="123" selection-start-column="98" selection-end-line="123" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ground.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controleur/Ground.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="3247">
-              <caret line="145" column="72" selection-start-line="145" selection-start-column="72" selection-end-line="145" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="2346">
+              <caret line="118" column="157" selection-start-line="118" selection-start-column="157" selection-end-line="118" selection-end-column="157" />
               <folding />
             </state>
           </provider>
@@ -67,8 +49,8 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="510">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="595">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -77,7 +59,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="272">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
@@ -87,8 +69,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1309">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+            <state vertical-scroll-proportion="-6.137931" vertical-offset="264" max-vertical-offset="1309">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,11 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetOfClouds.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controleur/SetOfClouds.java">
+      <file leaf-file-name="Frag.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controleur/Frag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="578">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="986">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VerticalFrag.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controleur/VerticalFrag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50566894" vertical-offset="83" max-vertical-offset="867">
+              <caret line="18" column="73" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,19 +101,11 @@
       <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1162" max-vertical-offset="1734">
-              <caret line="91" column="108" selection-start-line="91" selection-start-column="108" selection-end-line="91" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cloud.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controleur/Cloud.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41282895" vertical-offset="55" max-vertical-offset="663">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1205" max-vertical-offset="1870">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,8 +113,18 @@
       <file leaf-file-name="PhysObj.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/PhysObj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="2295">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1867" max-vertical-offset="2329">
+              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cloud.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controleur/Cloud.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,8 +133,8 @@
       <file leaf-file-name="Explosives.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="1615">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1853">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -188,17 +182,18 @@
         <option value="$PROJECT_DIR$/src/Controleur/GroundColumn.java" />
         <option value="$PROJECT_DIR$/src/Controleur/ColorLibrary.java" />
         <option value="$PROJECT_DIR$/src/Controleur/TankBoady.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/Frag.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/PhysObj.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/Explosives.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Main.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Ground.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/Tank.java" />
-        <option value="$PROJECT_DIR$/src/Controleur/Player.java" />
-        <option value="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Game.java" />
         <option value="$PROJECT_DIR$/src/Controleur/Cloud.java" />
         <option value="$PROJECT_DIR$/src/Controleur/SetOfClouds.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/PhysObj.java" />
+        <option value="$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/Player.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/Tank.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/Explosives.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/Frag.java" />
+        <option value="$PROJECT_DIR$/src/Controleur/VerticalFrag.java" />
       </list>
     </option>
   </component>
@@ -719,7 +714,7 @@
       <workItem from="1433501728037" duration="2917000" />
       <workItem from="1433522324309" duration="5610000" />
       <workItem from="1433592044615" duration="2761000" />
-      <workItem from="1433598577319" duration="52000" />
+      <workItem from="1433598577319" duration="5166000" />
     </task>
     <task id="LOCAL-00001" summary="test de commit via intellijidea">
       <created>1432746750761</created>
@@ -737,7 +732,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222177000" />
+    <option name="totallyTimeSpent" value="227291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -754,7 +749,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2625786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2625786" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16398244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -806,6 +801,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="680">
           <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +824,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="748">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,6 +834,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="833">
           <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#875#876#0" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,6 +1055,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="473" max-vertical-offset="901">
           <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,6 +1063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="850">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,6 +1078,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1105">
           <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#875#876#0" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
+            <element signature="e#944#945#0" expanded="false" />
+            <element signature="e#974#975#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,72 +1095,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/VerticalFrag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Frag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="918">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6823" max-vertical-offset="23749">
           <caret line="451" column="61" selection-start-line="451" selection-start-column="61" selection-end-line="451" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="510">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/PhysObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1162" max-vertical-offset="1734">
-          <caret line="91" column="108" selection-start-line="91" selection-start-column="108" selection-end-line="91" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1785" max-vertical-offset="2346">
-          <caret line="123" column="98" selection-start-line="123" selection-start-column="98" selection-end-line="123" selection-end-column="98" />
-          <folding />
+          <folding>
+            <element signature="e#15414#15415#0" expanded="false" />
+            <element signature="e#15459#15460#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,16 +1111,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="3247">
           <caret line="145" column="72" selection-start-line="145" selection-start-column="72" selection-end-line="145" selection-end-column="72" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controleur/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1309">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,8 +1124,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controleur/Cloud.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41282895" vertical-offset="55" max-vertical-offset="663">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/PhysObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1867" max-vertical-offset="2329">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.137931" vertical-offset="264" max-vertical-offset="1309">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="595">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1205" max-vertical-offset="1870">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/PlayerTankPhaseThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="2346">
+          <caret line="118" column="157" selection-start-line="118" selection-start-column="157" selection-end-line="118" selection-end-column="157" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Explosives.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1853">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/Frag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="986">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controleur/VerticalFrag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50566894" vertical-offset="83" max-vertical-offset="867">
+          <caret line="18" column="73" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

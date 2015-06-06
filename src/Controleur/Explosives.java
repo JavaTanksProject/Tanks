@@ -11,15 +11,29 @@ public class Explosives extends PhysObj{
     public double radius;//le rayon de l'expl_on_tanks
     public int damage;//les degats infligés
     public double a_angle;//orientation de l'explosif en l'air
+    public int id;
 
 
     public Explosives(double x, double y, double vx, double vy, String picturepath){super( x, y, vx, vy, picturepath);
         this.state=1;
-        this.radius=0.1;
+        this.radius=0.02;
         damage=50;
+        this.id=1;
+
 
 
     }
+    public Explosives(double x, double y, double vx, double vy){
+        super( x, y, vx, vy, "standard.png");
+        this.state=1;
+        this.radius=0.1;
+        damage=20;
+        this.id=1;
+
+
+    }
+    public double aaa(){return 1.1;}
+
 
 
     public void moveAndDisplayAndExplode(){

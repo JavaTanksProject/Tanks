@@ -32,7 +32,7 @@ public class Tank {
                     this.side=0;}
         else{
                     this.side=1;}
-        this.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");
+        this.loaded_ammunition=new Explosives(0,0,0,0);
     }
 public void  moveAndDisplay (){
 
@@ -74,11 +74,15 @@ public void  moveAndDisplay (){
             if(cannon_power>0.0001 && Game.active_tank.player==player){
                 StdDraw.setPenColor(ColorLibrary.grey);
                 StdDraw.filledRectangle(0.1, 0.9, cannon_power, 0.005);
-                StdDraw.text(0.1, 0.911,"Cannon power");}
+                StdDraw.text(0.1, 0.911,"Cannon power");
+
+            }
             if (pv>0){
                 StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
                 StdDraw.filledRectangle(pv*0.001,Game.height*0.95,pv*0.001,0.005);}
-            StdDraw.picture(0.1,0.98*Game.height,this.loaded_ammunition.picturepath,0.045,0.045);
+            if (Game.active_tank.player==player){
+                StdDraw.picture(0.1,0.98*Game.height,this.loaded_ammunition.picturepath,0.045,0.045);
+            }
         }
 
 
@@ -89,7 +93,9 @@ public void  moveAndDisplay (){
             if (pv>0){
                 StdDraw.setPenColor(ColorLibrary.green_to_red(pv));
                 StdDraw.filledRectangle(Game.lenght-pv*0.001,Game.height*0.95,pv*0.001,0.005);}
-            StdDraw.picture(0.95*Game.lenght,0.98*Game.height,this.loaded_ammunition.picturepath,0.045,0.045);
+            if (Game.active_tank.player==player) {
+                StdDraw.picture(0.95 * Game.lenght, 0.98 * Game.height, this.loaded_ammunition.picturepath, 0.045, 0.045);
+            }
 
         }
 

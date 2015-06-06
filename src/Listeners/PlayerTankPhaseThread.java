@@ -73,7 +73,7 @@ import java.awt.event.KeyEvent;
 
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_1))
-                {Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");}
+                {Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0);}
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_2))
                 {Game.active_tank.loaded_ammunition=new Frag(0,0,0,0);}
@@ -104,7 +104,7 @@ import java.awt.event.KeyEvent;
                         to_be_sent.vx=Math.cos(alpha)*Game.active_tank.cannon_power/5.0;
                         to_be_sent.vy=Math.sin(alpha)*Game.active_tank.cannon_power/5.0;
                             Game.ammunitions.add(to_be_sent);//on tire
-                        Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
+                        Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0);//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
 
                             if (running_player==1){
                                 running_player=2;
