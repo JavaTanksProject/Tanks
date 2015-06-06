@@ -20,7 +20,7 @@ public class SetOfClouds {
     }
     public void moveAndDisplay(){
         for (int i=0;i<size;i++){
-            int wind=set[i].wind;
+
              set[i].moveAndDisplay();
 
         }

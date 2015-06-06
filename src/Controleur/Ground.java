@@ -141,13 +141,9 @@ public class Ground {
             int size_of_column=colonne.size();
 
                     for (int j = size_of_column-1; j ==0 ; j--) {
-                        if (colonne.get(j)<h_down){
-                            the_lowest=j;
-                            System.out.println("lowest"+the_lowest);
-                            }
                         if (colonne.get(j)>h_up){
                             the_highest=j;
-                            System.out.println("highest"+the_highest);
+//                            System.out.println("highest"+the_highest);
                             }
                     }
                     if (the_highest!=-1)
@@ -155,20 +151,20 @@ public class Ground {
                         colonne.add(0.0);//si on est sous le plus haut on rajoute deux points à la colonne
                         colonne.add(0.0);
                     for (int j = size_of_column+1; j >the_highest; j--) {//on décale tout ce qu'il y a au dessus de l'impact de 2 vers le haut
-                        System.out.println("on est a l'etape1");
+//                        System.out.println("on est a l'etape1");
                         colonne.set(j,colonne.get(j-1));                 //pour laisser place à hup et down
                                                                          //1ere etape
                     }
                     for (int j = size_of_column+1; j >the_highest; j--) {//2emme etape
-                        System.out.println("on est a l'etape2");
+//                        System.out.println("on est a l'etape2");
                         colonne.set(j,colonne.get(j-1));
 
                     }
-                        System.out.println("on est a l'etape3");
+//                        System.out.println("on est a l'etape3");
                         colonne.set(the_highest+1,h_up);
-                        System.out.println("on est a l'etape4 colonne "+the_highest);
+//                        System.out.println("on est a l'etape4 colonne "+the_highest);
                         colonne.set(the_highest,h_down);
-                        System.out.println("on est a l'etape5");
+//                        System.out.println("on est a l'etape5");
                     }
                     else if (the_highest==-1){
                         double hnew_down = Math.min((Double)colonne.get(size_of_column-1),h_down);

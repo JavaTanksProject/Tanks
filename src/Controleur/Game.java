@@ -3,6 +3,7 @@ package Controleur;
 import Listeners.*;
 import edu.princeton.cs.introcs.StdDraw;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 
@@ -13,14 +14,17 @@ public class Game {
 
     public static SetOfClouds nuages;
     public static Ground terrain = new Ground();
-    public static int wind=10;
+    public static int wind=(int)(Math.random()*50)-25;
 //    public static PhysObj banane;
     public static Tank active_tank;
     public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
-    public static Tank tank1=new Tank(1);
-    public static Tank tank2=new Tank (2);
+    public static Tank tank1=Main.player1.tank;
+    public static Tank tank2=Main.player2.tank;
 
-
+    public static void show_the_wind(){
+        StdDraw.setPenColor(Color.white);
+        StdDraw.text(lenght*0.5,height*0.95,"vent: "+wind);
+    }
     public static void deal_with_ammunitions(){
         for(int i=0;i<ammunitions.size();i++){
             ammunitions.get(i).moveAndDisplayAndExplode();
@@ -58,7 +62,7 @@ public class Game {
 //            banane.moveAndDisplay();
             tank1.moveAndDisplay();
             tank2.moveAndDisplay();
-
+            show_the_wind();
             StdDraw.show(1);
         }
 

@@ -72,6 +72,16 @@ import java.awt.event.KeyEvent;
                 }
 
 
+                if (StdDraw.isKeyPressed(KeyEvent.VK_1))
+                {Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");}
+
+                if (StdDraw.isKeyPressed(KeyEvent.VK_2))
+                {Game.active_tank.loaded_ammunition=new Frag(0,0,0,0);}
+
+                if (StdDraw.isKeyPressed(KeyEvent.VK_3))
+                {Game.active_tank.loaded_ammunition=new VerticalFrag(0,0,0,0);}
+
+
 
 
 
@@ -88,12 +98,13 @@ import java.awt.event.KeyEvent;
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_SPACE)){
                             double alpha=Game.active_tank.tankcannon.angle;
-                            Game.ammunitions.add(
-                                    new Frag(Game.active_tank.tankcannon.x,
-                                    Game.active_tank.tankcannon.y,
-                                    Math.cos(alpha)*Game.active_tank.cannon_power/5.0,
-                                    Math.sin(alpha)*Game.active_tank.cannon_power/5.0
-                                    ));
+                    Explosives to_be_sent=Game.active_tank.loaded_ammunition;
+                        to_be_sent.x=Game.active_tank.tankcannon.x;
+                        to_be_sent.y=Game.active_tank.tankcannon.y;
+                        to_be_sent.vx=Math.cos(alpha)*Game.active_tank.cannon_power/5.0;
+                        to_be_sent.vy=Math.sin(alpha)*Game.active_tank.cannon_power/5.0;
+                            Game.ammunitions.add(to_be_sent);//on tire
+                        Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
 
                             if (running_player==1){
                                 running_player=2;
@@ -105,11 +116,12 @@ import java.awt.event.KeyEvent;
                             }
 
 
-                            try {
-                                Thread.sleep(2000);
+                            while (Game.ammunitions.get(Game.ammunitions.size()-1).state==1)try { //tant que le dernier explosif n'a pas explosé, on ne bouge plus
+                                Thread.sleep(1);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
+                    Game.wind=(int)(Math.random()*50)-25;//on change le vent pour le round d'apres
                 }
 
 
