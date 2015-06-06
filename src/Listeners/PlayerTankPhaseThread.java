@@ -77,7 +77,7 @@ import java.awt.event.KeyEvent;
 
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_1))
-                {Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");}
+                {Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0);}
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_2))
                 {Game.active_tank.loaded_ammunition=new Frag(0,0,0,0);}
@@ -108,8 +108,8 @@ import java.awt.event.KeyEvent;
                         to_be_sent.y=Game.active_tank.tankcannon.y;
                         to_be_sent.vx=Math.cos(alpha)*Game.active_tank.cannon_power/5.0;
                         to_be_sent.vy=Math.sin(alpha)*Game.active_tank.cannon_power/5.0;
-                            Game.ammunitions.add(to_be_sent);//on tire
-                        Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0,"ammunstandard.png");//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
+                            Game.ammunitions.add(to_be_sent);  //on tire
+                            Game.active_tank.loaded_ammunition=new Explosives(0,0,0,0);//on recharge avec un standard(si non la prochaine munition semble avoir l'adresse de l'ancienne )
                 	
                         while (Game.ammunitions.get(Game.ammunitions.size()-1).state==1)try { //tant que le dernier explosif n'a pas explosé, on ne bouge plus
                             Thread.sleep(1);
@@ -118,8 +118,7 @@ import java.awt.event.KeyEvent;
                         }
                 	}
                 	
-                           
-                            if (running_player==1){
+                         if (running_player==1){
                                 running_player=2;
                                 Game.active_tank=Game.tank2;
                             }                       //on passe au tour de l'autre joueur
@@ -127,8 +126,6 @@ import java.awt.event.KeyEvent;
                                 running_player = 1;
                                 Game.active_tank=Game.tank1;
                             }
-
-
 
                     Game.wind=(int)(Math.random()*50)-25;//on change le vent pour le round d'apres
                 }
