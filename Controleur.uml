@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Controleur</OriginalElement>
+  <nodes>
+    <node x="217.0" y="332.0">Controleur.Cloud</node>
+    <node x="783.9375" y="321.0">Controleur.TankCannon</node>
+    <node x="0.0" y="321.0">Controleur.GroundColumn</node>
+    <node x="568.1393333333333" y="0.0">Controleur.PhysObj</node>
+    <node x="335.5" y="574.0">Controleur.Frag</node>
+    <node x="126.70474999999993" y="918.0">Controleur.Game</node>
+    <node x="1177.9375" y="703.333333333333">Controleur.ColorLibrary</node>
+    <node x="629.6224166666666" y="486.0">Controleur.Tank</node>
+    <node x="27.5" y="563.0">Controleur.Ground</node>
+    <node x="194.5" y="563.0">Controleur.SetOfClouds</node>
+    <node x="903.9375" y="299.0">Controleur.TankBoady</node>
+    <node x="110.66958333333332" y="796.0">Controleur.GameThread</node>
+    <node x="715.1666666666666" y="951.0">Controleur.Main</node>
+    <node x="755.6666666666666" y="763.0">Controleur.Player</node>
+    <node x="370.3372499999999" y="277.0">Controleur.Explosives</node>
+    <node x="672.9375" y="321.0">Controleur.TankHead</node>
+    <node x="471.5" y="574.0">Controleur.VerticalFrag</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Controleur.Frag" target="Controleur.Explosives">
+      <point x="0.0" y="-25.5" />
+      <point x="393.5" y="466.0" />
+      <point x="443.25391666666656" y="466.0" />
+      <point x="-14.583333333333329" y="69.5" />
+    </edge>
+    <edge source="Controleur.Game" target="Controleur.Tank">
+      <point x="125.5625" y="-113.5" />
+      <point x="395.76724999999993" y="898.0" />
+      <point x="698.5836666666665" y="898.0" />
+      <point x="698.5836666666665" y="738.0" />
+      <point x="684.7890833333333" y="738.0" />
+      <point x="-110.33333333333331" y="113.5" />
+    </edge>
+    <edge source="Controleur.VerticalFrag" target="Controleur.Explosives">
+      <point x="0.0" y="-25.5" />
+      <point x="529.5" y="466.0" />
+      <point x="472.42058333333324" y="466.0" />
+      <point x="14.583333333333343" y="69.5" />
+    </edge>
+    <edge source="Controleur.Tank" target="Controleur.TankHead">
+      <point x="-20.6875" y="-113.5" />
+      <point x="774.4349166666666" y="466.0" />
+      <point x="741.1875" y="466.0" />
+      <point x="22.75" y="25.5" />
+    </edge>
+    <edge source="Controleur.TankHead" target="Controleur.PhysObj">
+      <point x="0.0" y="-25.5" />
+      <point x="718.4375" y="257.0" />
+      <point x="697.1393333333333" y="257.0" />
+      <point x="0.0" y="113.5" />
+    </edge>
+    <edge source="Controleur.Game" target="Controleur.Ground">
+      <point x="-125.5625" y="-113.5" />
+      <point x="144.64224999999993" y="898.0" />
+      <point x="78.83724999999993" y="898.0" />
+      <point x="78.83724999999993" y="738.0" />
+      <point x="49.5" y="738.0" />
+      <point x="-44.0" y="36.5" />
+    </edge>
+    <edge source="Controleur.SetOfClouds" target="Controleur.Cloud">
+      <point x="27.25" y="-36.5" />
+      <point x="276.25" y="466.0" />
+      <point x="265.0" y="466.0" />
+      <point x="16.0" y="14.5" />
+    </edge>
+    <edge source="Controleur.Ground" target="Controleur.GroundColumn">
+      <point x="-33.0" y="-36.5" />
+      <point x="60.5" y="466.0" />
+      <point x="46.75" y="466.0" />
+      <point x="-46.75" y="25.5" />
+    </edge>
+    <edge source="Controleur.Tank" target="Controleur.TankBoady">
+      <point x="103.4375" y="-113.5" />
+      <point x="898.5599166666666" y="456.0" />
+      <point x="957.6875" y="456.0" />
+      <point x="-53.75" y="47.5" />
+    </edge>
+    <edge source="Controleur.Game" target="Controleur.SetOfClouds">
+      <point x="17.9375" y="-113.5" />
+      <point x="288.14224999999993" y="898.0" />
+      <point x="277.8372499999999" y="898.0" />
+      <point x="277.8372499999999" y="738.0" />
+      <point x="285.33333333333326" y="738.0" />
+      <point x="36.33333333333326" y="36.5" />
+    </edge>
+    <edge source="Controleur.TankBoady" target="Controleur.PhysObj">
+      <point x="0.0" y="-47.5" />
+      <point x="1011.4375" y="247.0" />
+      <point x="800.3393333333332" y="247.0" />
+      <point x="103.19999999999999" y="113.5" />
+    </edge>
+    <edge source="Controleur.Game" target="Controleur.GameThread">
+      <point x="-53.8125" y="-113.5" />
+      <point x="216.39224999999993" y="878.0" />
+      <point x="160.66958333333332" y="878.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="Controleur.Tank" target="Controleur.TankCannon">
+      <point x="62.0625" y="-113.5" />
+      <point x="857.1849166666666" y="466.0" />
+      <point x="858.9375" y="466.0" />
+      <point x="25.0" y="25.5" />
+    </edge>
+    <edge source="Controleur.Explosives" target="Controleur.PhysObj">
+      <point x="0.0" y="-69.5" />
+      <point x="457.8372499999999" y="257.0" />
+      <point x="645.5393333333332" y="257.0" />
+      <point x="-51.60000000000002" y="113.5" />
+    </edge>
+    <edge source="Controleur.GameThread" target="Controleur.Ground">
+      <point x="-25.0" y="-14.5" />
+      <point x="135.66958333333332" y="738.0" />
+      <point x="137.5" y="738.0" />
+      <point x="44.0" y="36.5" />
+    </edge>
+    <edge source="Controleur.GameThread" target="Controleur.SetOfClouds">
+      <point x="25.0" y="-14.5" />
+      <point x="185.66958333333332" y="738.0" />
+      <point x="212.66666666666663" y="738.0" />
+      <point x="-36.33333333333337" y="36.5" />
+    </edge>
+    <edge source="Controleur.Tank" target="Controleur.Explosives">
+      <point x="-103.4375" y="-113.5" />
+      <point x="691.6849166666666" y="446.0" />
+      <point x="530.7539166666667" y="446.0" />
+      <point x="72.91666666666671" y="69.5" />
+    </edge>
+    <edge source="Controleur.Game" target="Controleur.Explosives">
+      <point x="53.8125" y="-113.5" />
+      <point x="324.01724999999993" y="898.0" />
+      <point x="314.0" y="898.0" />
+      <point x="314.0" y="446.0" />
+      <point x="384.92058333333324" y="446.0" />
+      <point x="-72.91666666666667" y="69.5" />
+    </edge>
+    <edge source="Controleur.Player" target="Controleur.Tank">
+      <point x="-36.25" y="-47.5" />
+      <point x="791.9166666666666" y="738.0" />
+      <point x="795.1224166666666" y="738.0" />
+      <point x="0.0" y="113.5" />
+    </edge>
+    <edge source="Controleur.Main" target="Controleur.Player">
+      <point x="-56.5" y="-80.5" />
+      <point x="771.6666666666666" y="898.0" />
+      <point x="791.9166666666666" y="898.0" />
+      <point x="-36.25" y="47.5" />
+    </edge>
+    <edge source="Controleur.TankCannon" target="Controleur.PhysObj">
+      <point x="0.0" y="-25.5" />
+      <point x="833.9375" y="257.0" />
+      <point x="748.7393333333332" y="257.0" />
+      <point x="51.60000000000002" y="113.5" />
+    </edge>
+    <edge source="Controleur.Cloud" target="Controleur.PhysObj">
+      <point x="0.0" y="-14.5" />
+      <point x="249.0" y="247.0" />
+      <point x="593.9393333333333" y="247.0" />
+      <point x="-103.19999999999999" y="113.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="916.9999999999998" y="597.9999999999999" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

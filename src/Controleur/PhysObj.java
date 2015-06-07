@@ -57,7 +57,7 @@ public /* abstract*/ class PhysObj {//abstract rend impossible l'instanciation d
 
     public void wind(){
         int wind= Game.wind;
-        this.vx=vx+(-(vx-0.1*wind)*(vx-0.1*wind))*air_friction_coeff;
+        this.vx=vx+(-(vx-0.1*wind)*(vx-0.1*wind)*(vx-0.1*wind)/Math.abs((vx-0.1*wind)))*air_friction_coeff;
     }
 
 

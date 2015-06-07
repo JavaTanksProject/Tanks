@@ -1,6 +1,7 @@
 package Controleur;
 
 import Listeners.*;
+import Listeners.Menu;
 import edu.princeton.cs.introcs.StdDraw;
 
 import java.awt.*;
@@ -8,14 +9,14 @@ import java.util.ArrayList;
 
 
 public class Game {
-//    dimensions du terrain
+    //    dimensions du terrain
     public static double lenght=2.0;
     public static double height=1.0;
 
     public static SetOfClouds nuages;
     public static Ground terrain = new Ground();
     public static int wind=(int)(Math.random()*50)-25;
-//    public static PhysObj banane;
+    //    public static PhysObj banane;
     public static Tank active_tank;
     public static ArrayList<Explosives> ammunitions=new ArrayList<Explosives>();
     public static Tank tank1=Main.player1.tank;
@@ -31,6 +32,14 @@ public class Game {
         }
     }
     public static void main(String[] args) {
+        Main.player1.personal_goods[1]=100;
+        Main.player1.personal_goods[2]=5;
+        Main.player1.personal_goods[3]=1;
+        Main.player2.personal_goods[1]=100;
+        Main.player2.personal_goods[2]=5;
+        Main.player2.personal_goods[3]=1;
+
+        System.out.println(Main.player1.personal_goods[1]);
 
 
 
@@ -41,8 +50,7 @@ public class Game {
         StdDraw.clear(StdDraw.getPenColor());//font bleu ciel
         StdDraw.setXscale(0, lenght);
         StdDraw.setYscale(0, height);
-        terrain.display();
-         StdDraw.save("currentground.png");
+
 //        ammunitions.add(new Explosives(1.0,1.0,0.0,0.0,"ammunstandard.png"));
 //        banane= new PhysObj(1.0,1.0,0.0,0.0,"banane.png");
         nuages  =new SetOfClouds(10,5);
@@ -53,19 +61,28 @@ public class Game {
 
         PlayerTankPhaseThread thread = new PlayerTankPhaseThread();
         thread.start();
-
-        while (true){
-            StdDraw.picture(1.0, 0.5, "currentground.png");
-
-            nuages.moveAndDisplay();
-            Game.deal_with_ammunitions();
-//            banane.moveAndDisplay();
-            tank1.moveAndDisplay();
-            tank2.moveAndDisplay();
-            show_the_wind();
-            StdDraw.show(1);
+        Menu menu=new Menu();
+        menu.start();
+        while (Main.time_of_menu){
+            StdDraw.show(100);
         }
+        menu.interrupt();
+        menu.stop();
 
-        }
+        GameThread game_thread= new GameThread();
+        game_thread.start();
 
+//        while (true){
+//            StdDraw.picture(1.0, 0.5, "currentground.png");
+//
+//            nuages.moveAndDisplay();
+//            Game.deal_with_ammunitions();
+//            tank1.moveAndDisplay();
+//            tank2.moveAndDisplay();
+//            show_the_wind();
+//            StdDraw.show(1);
+//        }
+//
     }
+
+}

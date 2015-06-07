@@ -19,7 +19,7 @@ public class VerticalFrag extends Explosives {
 
 	    		
 	    	}
-            if (vy<0){StdDraw.picture(x, y+0.03,"parachute.png", 0.05, 0.1);}
+            if (vy<0){StdDraw.picture(x, y+0.05,"parachute.png", 0.08, 0.08);}
 	    	a_vy=vy;
 	  
 	    }
