@@ -31,13 +31,9 @@ public class Game {
             ammunitions.get(i).moveAndDisplayAndExplode();
         }
     }
+
+
     public static void main(String[] args) {
-        Main.player1.personal_goods[1]=100;
-        Main.player1.personal_goods[2]=5;
-        Main.player1.personal_goods[3]=1;
-        Main.player2.personal_goods[1]=100;
-        Main.player2.personal_goods[2]=5;
-        Main.player2.personal_goods[3]=1;
 
         System.out.println(Main.player1.personal_goods[1]);
 

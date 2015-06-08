@@ -3,6 +3,7 @@ package Controleur;
 import Listeners.PlayerTankPhaseThread;
 import edu.princeton.cs.introcs.StdDraw;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
@@ -28,6 +29,8 @@ public class GameThread extends Thread{
             //on crée le terrain
             StdDraw.setPenColor(ColorLibrary.sky);
             StdDraw.clear(StdDraw.getPenColor());//font bleu ciel
+            if(Main.level_of_computer%2==0){
+                Game.terrain.this_is_night();}
             Game.terrain.display();
             StdDraw.show(100);
             StdDraw.save("currentground" + Main.level_of_computer+".png");
@@ -43,6 +46,8 @@ public class GameThread extends Thread{
 
             while (!Main.gameover){
                 StdDraw.picture(1.0, 0.5, "currentground"+ Main.level_of_computer+".png");
+                if(Main.level_of_computer%2==0){
+                Game.nuages.set[0].picturepath="moon.png";}
 
                 Game.nuages.moveAndDisplay();
                 Game.deal_with_ammunitions();
@@ -69,6 +74,10 @@ public class GameThread extends Thread{
             Main.player2.tank=Game.tank2;
             Main.player1.tank=Game.tank1;
             Game.ammunitions.clear();
+            if (Main.level_of_computer%2==0){ColorLibrary.sky=new Color(30,90,116);}
+            else if (Main.level_of_computer%2==1){ColorLibrary.sky=new Color (36, 170, 230);}
+            if (Main.level_of_computer%3%2==1){ColorLibrary.grass=new Color(234,206,106);}
+            else if (Main.level_of_computer%3%2==0){ColorLibrary.grass=new Color (142, 203, 67);}
 
         }}
 

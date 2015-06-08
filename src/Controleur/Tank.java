@@ -103,7 +103,7 @@ public void  moveAndDisplay (){
             if (Game.active_tank.player==player) {
                 StdDraw.picture(0.95 * Game.lenght, 0.98 * Game.height, this.loaded_ammunition.picturepath, 0.045, 0.045);
                 StdDraw.setPenColor(ColorLibrary.grey);
-                StdDraw.text(0.95 * Game.lenght,0.98*Game.height," "+Main.player2.personal_goods[this.loaded_ammunition.id]);
+                StdDraw.text(0.95 * Game.lenght+0.04,0.98*Game.height," "+Main.player2.personal_goods[this.loaded_ammunition.id]);
 
             }
             if (pv<1){StdDraw.picture(1.0, 0.5, "player1wins.png");

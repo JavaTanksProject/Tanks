@@ -11,7 +11,7 @@ public class ColorLibrary {
     public static Color grass= new Color (142, 203, 67);
     public static Color sky= new Color (36, 170, 230);
     public static Color grey=new Color(105,105,105);
-    public static Color test=new Color(250,250,00);
+    public static Color star=new Color(250,250,00);
 
     public static Color green_to_red (int pv){
         int red=(int)Math.floor(150-((pv/10)*(pv/10)*1.5)//on gere le rouge

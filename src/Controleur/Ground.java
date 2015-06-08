@@ -74,12 +74,14 @@ public class Ground {
         }
 
     public void display() {
+
+
         int nval = ground_values.length;
         double[] posX = new double[nval + 2];
         double[] posY = new double[nval + 2];
         for (int i = 0; i < nval; i++) {
             double h = (Double) ground_values[i].ground_column.get(0);
-            posX[i] = ((double) i + 1.0) * 2 / nval;
+            posX[i] = ((double) i + 1.0) * Game.lenght / nval;
             posY[i] = h;
         }
         posX[nval] = 2.0;
@@ -95,6 +97,15 @@ public class Ground {
         StdDraw.filledPolygon(posX, arrayMap(posY, 0.01));
 
 
+
+    }
+    public void this_is_night() {
+        if (Main.level_of_computer % 2 == 0) {
+            StdDraw.setPenColor(ColorLibrary.star);
+            for (int i = 0; i < 100; i++) {
+                StdDraw.filledCircle(Math.random() * Game.lenght, Math.random() * Game.height, 0.003);
+            }
+        }
 
     }
     private double[] arrayMap (double[] array, double value) {

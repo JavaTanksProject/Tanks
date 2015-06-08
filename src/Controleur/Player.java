@@ -18,10 +18,13 @@ public class Player {
     public Player(int id){
         this.tank=new Tank(1+((id+1)%2));
         this.money=0;
-        this.personal_goods=new int [10];
-        this.personal_goods[1]=100;
-        this.personal_goods[2]=5;
-        this.personal_goods[3]=1;
+         int [] t_personal_goods=new int [10];
+        t_personal_goods[1]=100;
+        t_personal_goods[2]=5;
+        t_personal_goods[3]=1;
+        t_personal_goods[4]=3;
+        personal_goods=t_personal_goods;
+
         this.tank.player=id;
 
     }

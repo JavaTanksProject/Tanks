@@ -33,7 +33,7 @@ public class VerticalFrag extends Explosives {
 	    }
 
         if(vy < 0 && a_vy < 0){
-            a_angle+= Math.sin(y*20);
+            a_angle+= 0.5*Math.sin(y*20);
 
         }
 

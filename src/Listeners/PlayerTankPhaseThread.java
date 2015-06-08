@@ -25,27 +25,47 @@ import java.awt.event.KeyEvent;
 
                 double loss_of_precision=1;//-(Math.random()/Main.level_of_computer);
                 double power_to_reach=0.04;//*loss_of_precision;
-                double angle_to_reach=1.02;//en radian
+                double angle_to_reach=3.02;//en radian
 
 
 
 
 
                 while (angle_to_reach<Game.active_tank.tankcannon.angle*loss_of_precision ){
-                    Game.active_tank.aim_angle-=0.000001;
+                    Game.active_tank.aim_angle-=0.001;
+                    try {
+                        Thread.sleep(2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 //                    System.out.println("on est dans le premier while");
 
                 }
                 while (angle_to_reach>Game.active_tank.tankcannon.angle*loss_of_precision ){
-                    Game.active_tank.aim_angle+=0.000001;
+                    Game.active_tank.aim_angle+=0.001;
+                    try {
+                        Thread.sleep(2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 //                    System.out.println("on est dans le deuxiemme while");
                 }
                 while(power_to_reach<Game.active_tank.cannon_power*loss_of_precision){
-                    Game.active_tank.cannon_power-=0.000001;
+                    Game.active_tank.cannon_power-=0.001;
+                    try {
+                        Thread.sleep(2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 //                    System.out.println("on est dans le 3emme while");
                 }
                 while(power_to_reach>Game.active_tank.cannon_power*loss_of_precision){
-                    Game.active_tank.cannon_power+=0.000001;
+                    Game.active_tank.cannon_power+=0.001;
+                    try {
+                        Thread.sleep(2);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 //                    System.out.println("on est dans le 4emme while");
                 }
                 the_computer_is_ready_to_shoot=true;
@@ -122,6 +142,9 @@ import java.awt.event.KeyEvent;
 
                 if (StdDraw.isKeyPressed(KeyEvent.VK_3) && ((Main.player1.personal_goods[3]>0 && running_player==1)||(Main.player2.personal_goods[3]>0 && running_player==2) )) {
                     Game.active_tank.loaded_ammunition = new VerticalFrag(0, 0, 0, 0);
+                }
+                if (StdDraw.isKeyPressed(KeyEvent.VK_4) && ((Main.player1.personal_goods[4]>0 && running_player==1)||(Main.player2.personal_goods[4]>0 && running_player==2) )) {
+                    Game.active_tank.loaded_ammunition = new Carapace(0, 0, 0, 0);
                 }
 
 
